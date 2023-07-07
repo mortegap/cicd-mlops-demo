@@ -1,4 +1,4 @@
 Best hyperparameters:
-  svm__C: 10
+  svm__C: 11
   svm__gamma: 0.5
   svm__kernel: linear

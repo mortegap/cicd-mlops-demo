@@ -45,11 +45,11 @@ stages:
             - linear
             svm__C:
             - 0.1
-            - 2
-            - 10
+            - 1
+            - 11
             svm__gamma:
             - 0.5
-            - 1
+            - 2
             - 10
           grid_search:
             cv: 2
@@ -57,10 +57,10 @@ stages:
             verbose: 3
     outs:
     - path: model/svm
-      md5: 87de9e8301c0e3951cd0334f0a3ac674
-      size: 148295
+      md5: a0364fef4ed23666d3d0b22f090a76de
+      size: 149615
     - path: model/svm.mlem
-      md5: b565d84c0e08a75e18712e72a97c7842
+      md5: 61616c758b724a0d442a9d3d4f9812c8
       size: 1263
   evaluate:
     cmd: python src/evaluate.py
@@ -70,8 +70,8 @@ stages:
       size: 194875
       nfiles: 4
     - path: model/svm
-      md5: 87de9e8301c0e3951cd0334f0a3ac674
-      size: 148295
+      md5: a0364fef4ed23666d3d0b22f090a76de
+      size: 149615
     - path: src/evaluate.py
       md5: 912aac9c6e00b70858f1d47bd16e51a0
       size: 803

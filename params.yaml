@@ -11,11 +11,11 @@ train:
     - linear
     svm__C:
     - 0.1
-    - 2
-    - 10
+    - 1
+    - 11
     svm__gamma:
     - 0.5
-    - 1
+    - 2
     - 10
   grid_search:
     cv: 2
